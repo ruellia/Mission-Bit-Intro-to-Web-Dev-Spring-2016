@@ -1,0 +1,33 @@
+body {
+				background-image: url('https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg');
+			}
+
+			p {
+				color:green;
+			}
+
+			a:hover {
+				color: black;
+			}
+
+			h1 {
+				font-family: Verdana;
+				text-align: center;
+			}
+
+			dl {
+				border: 3px solid black;
+			}
+
+			a {
+				color: lime;
+			}
+
+			#thisisanid {
+				color: white;
+			}
+
+			.thisisaclass {
+				color: grey;
+			}
+}
