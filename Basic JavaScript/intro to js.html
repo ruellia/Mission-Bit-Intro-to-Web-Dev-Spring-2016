@@ -7,17 +7,42 @@
 		<title>Javascript</title>
 
 		<script>
+
+			var counter = 0;
+
+			var helloWorldConditional = function() {
+				console.log("If the function runs this text will appear in the console!");
+				if (counter > 3) {
+					alert("I'm tired of saying hello!");
+					counter = 0;
+				} else {
+					alert("Hello World!");
+					counter++;
+				}
+			}
+
 			var helloWorld = function() {
 				console.log("If the function runs this text will appear in the console!");
 				alert("Hello World!");
+			}
+
+			var notAllowed = function() {
+				alert("HOW DARE YOU");
+				window.close();
+			}
+
+			var annoying = function() {
+				alert("heyheyheyheyheyhey");
 			}
 
 		</script>
 
 	</head>
 
-	<body>
+	<body onmouseover = "annoying()">
 		<button type="button" onclick="helloWorld()">Hello World</button>
+		<p oncopy = "notAllowed()">This is an amazing secret...don't tell anyone!</p>
+		<button type="button" onclick="helloWorldConditional()">Hello World</button>
 	</body>
 
 </html>
